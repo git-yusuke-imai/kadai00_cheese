@@ -1,0 +1,641 @@
+/* ここから下に記載していく */
+body {
+    font-family: "Meiryo", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #fff;
+    color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 30px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin: 0 10px;
+  }
+  
+  .nav li a {
+    display: block;
+    margin: 25px;
+    font-size: 21px;
+    color: #000;
+    text-decoration: none;
+    
+  }
+  
+  .nav li a:hover {
+    text-decoration: underline;
+  }
+  .main-visual {
+    padding-top: 120px;
+    position: relative;
+    width: 100%;
+    height: 500px; /* 画像高さ指定 */
+    overflow: hidden;
+  }
+  
+  .main-visual-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  /* 画像 */
+  .main-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1200px;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  /* テキストセンター配置 */
+  .main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .main-text p {
+    white-space: nowrap; /* ← ここ追加！改行禁止！ */
+    margin: 0;
+  }
+  /* テキストサイズ */
+  .text-large {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .text-medium {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .about {
+    padding: 60px 0;
+    /* 背景色なし */
+  }
+  
+  .about-inner {
+    max-width: 1200px;
+    padding: 0 30px;
+    text-align: center;
+    margin: 0 auto; /* 中央寄せ */
+  }
+  
+  /* タイトル英語 */
+  .en-title {
+    font-size: 24px;
+    color: #ffd61a;
+    font-weight: bold; /* 太文字 */
+    margin-bottom: 20px;
+    white-space: nowrap; /* 改行禁止 */
+  }
+  
+  /* タイトル日本語 */
+  .jp-title {
+    font-size: 18px;
+    margin-bottom: 60px;
+    white-space: nowrap; /* 改行禁止 */
+  }
+  
+  /* 本文テキスト */
+  .about-text1{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    white-space: nowrap;}
+  .about-text2,
+  .about-text3{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    white-space: nowrap;}
+  .about-text4 {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 80px;
+    white-space: nowrap;} /* 改行禁止 */
+
+    .about-images {
+      display: flex;
+      justify-content: center; /* 画像の中央寄せ */
+    }
+    
+    .about-images img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .course {
+      padding: 10px 0;
+     /* background-color: #fafafa;*/  
+      /* 背景色なし */
+    }
+
+
+
+    .course-inner {
+      max-width: 1200px;
+      padding: 0 30px;
+      text-align: center;
+      margin: 0 auto 60px; /* 中央寄せ */
+    }
+
+    .course-images1 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #fafafa;
+    }
+    
+    .course-images1 img {
+      width: 600px;  /*例）画像幅（必要なら調整OK） */
+      height: auto;
+      margin-left: 0; /* ← 左側の余白ゼロにする */
+    }
+    
+    .course-text-block {
+      margin-left: 50px; /* 画像との間隔 */
+      text-align: left; /* テキスト右寄せ */
+      flex: 1; /* 残りの幅を使って伸びる */
+      
+    }
+    
+    .course-text1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .course-text2 {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .course .en-title {
+      color: #000;
+    }
+
+    .course-images2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: #fafafa;
+    }
+    
+    .course-text-block {
+      text-align: left;
+      flex: 1;
+    }
+    
+    .course-images2 img {
+      width: 600px;
+      height: auto;
+      display: block;
+      margin-left: 50px; /* ← ここで画像とテキストの間を空ける */
+    }
+    
+
+    .news {
+      padding: 60px 0;
+      /* 背景色なし */
+    }
+    
+    .news-inner {
+      max-width: 1200px;
+      padding: 0 30px;
+      text-align: center;
+      margin: 0 auto; /* 中央寄せ */
+    }
+
+
+    .news-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 0; /* gapではなく中央ブロックだけmarginで調整 */
+    }
+    
+    .nwes-images1,
+    .nwes-images2,
+    .nwes-images3 {
+      width: 300px;
+    }
+    
+    /* 中央ブロックだけ左右に30pxずつ余白 */
+    .nwes-images2 {
+      margin: 0 30px;
+    }
+    
+
+    .news-inner p {
+      margin-bottom: 0; /* 必要に応じて値を減らす */
+    }
+
+    .nwes-text1 {
+      font-size: 16px; /* 必要ならフォントサイズ */
+      margin: 30px 0 24px; /* 上 右左 下 */
+    }
+
+    .nwes-text2 {
+      font-size: 14px;
+    }
+
+    .nwes-images1,
+    .nwes-images2,
+    .nwes-images3 {
+      transition: transform 0.3s ease;
+    }
+    
+    .nwes-images1:hover,
+    .nwes-images2:hover,
+    .nwes-images3:hover {
+      transform: scale(1.10); /* 少し拡大 */
+    }
+
+
+    .more-button-wrapper {
+      max-width: 1200px;
+      margin: 60px auto; /* ← 上下60px、中央寄せ */
+      text-align: center;
+    }
+    
+    .more-button {
+      display: inline-block;
+      width: 300px;
+      height: 60px;
+      line-height: 60px;
+      background-color: #ffd61a;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .more-button:hover {
+      background-color: #f5e396;
+      cursor: pointer;
+    }
+    
+    .access .en-title {
+      color: #000;
+    }
+
+    .access {
+      padding: 0; /* 背景だけの枠にするのでpaddingはなし */
+      
+      
+    }
+    
+    .access-inner {
+      background-color: #f0f0f0; /* 背景色を中央のボックスにのみ適用 */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 0 20px 0 ;
+      text-align: center;
+    }
+
+    .access2 {
+        
+    }
+    
+    .access2-inner1,
+     .access2-inner2 {
+      width: 50%; /* 両カラムに50%幅を指定して並べる */
+  text-align: left;
+    }
+    
+    .access2-container {
+      background-color: #f0f0f0;
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 0 20px 0;
+      justify-content: center;
+      gap: 40px; /* カラムの間隔（調整可） */
+      align-items: center; /* 親の中で縦中央揃え */
+    }
+
+    .access2-inner1 .about-text2 {
+      margin-left: 400px;
+      margin-bottom: 30px;
+    }
+
+    .access2-inner2 .about-text2 {
+      margin-bottom: 30px;
+    }
+
+    .contact .en-title {
+      color: #000;
+    }
+
+    .contact-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 0 20px 0 ;
+      text-align: center;
+    }
+
+    .contact-inner2 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0px 0 0px 0 ;
+      text-align: center;
+    }
+
+    .contact-inner2 .about-text2 {
+      margin-bottom: 30px;
+    }
+
+
+    .contact-inner3 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0px 0 20px 0 ;
+      text-align: center;
+    }
+
+
+
+    .contact-form {
+      width: 704px; 
+      margin: 0 auto;
+      text-align: left;
+    }  
+    
+    
+    
+    
+    .form-group label {
+      width: 240px;
+      font-size: 16px;
+      margin: 0;
+      margin-right: 64px; /* ←★追加！フォームとの間に空間を作る！ */
+      padding-top: 8px; /* テキスト入力と高さ合わせ */
+      text-align: left; /* ← ここがポイント！ */
+      display: block; /* ← これが超重要！ */
+      
+    }
+
+
+
+
+
+
+
+
+
+
+    .contact-form input[type="email"],
+    .contact-form select {
+      width: 328px;
+      height: 36px;
+      font-size: 16px;
+      border: 1px solid #bfbfbf;
+      padding: 5px 10px;
+    }
+    
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      white-space: nowrap; /* ← これが改行防止のキー！ */
+    }
+    
+    
+
+    .form-group {
+      display: flex;
+      align-items: flex-start; /* テキストエリアにも対応 */
+      margin-bottom: 40px;
+    }
+    
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form select,
+    .contact-form textarea {
+      width: 400px;
+      height: 36px;
+      font-size: 16px;
+      border: 1px solid #bfbfbf;
+      padding: 5px 10px;
+    }
+    
+    .contact-form textarea {
+      height: auto;
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    /* チェックボックスはラップ必要なので別調整 */
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .send-button-wrapper {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .send-button {
+      display: inline-block;
+      width: 300px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #ffd61a;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .send-button:hover {
+      background-color: #f5e396;
+      cursor: pointer;
+    }
+
+
+
+
+    .contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select {
+  width: 328px;
+  height: 36px;
+  font-size: 16px;
+  border: 1px solid #bfbfbf;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  appearance: none;       /* モダンブラウザ */
+  -webkit-appearance: none; /* Safari対応 */
+  -moz-appearance: none;    /* Firefox対応 */
+}
+
+
+
+
+.contact-form {
+  background-image: url('../img/keisen.png');
+  background-repeat: no-repeat;
+  background-position: top left; /* ← 左上にぴったり */
+  background-size: 100% auto;
+  background-color: transparent;
+  width: 704px; 
+  padding: 30px;
+  border: 1px solid transparent; /* 強制的に領域を見えるように */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+      width: 1200px;
+      text-align: center;
+      padding: 30px;
+      background-color: #707070;
+      font-size: 16px;
+      color: rgb(183, 178, 178);
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+
+  #about,
+#course,
+#news,
+#access,
+#contact {
+  scroll-margin-top: 115px;
+}
+
+
+
+
+.send-button {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffd61a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  
+  /* プルプル振動アニメーション */
+  animation: shake 1.5s ease-in-out infinite;
+}
+
+/* 光エフェクト */
+.send-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shine 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* 光アニメーション */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* プルプル（横揺れ）アニメーション */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
