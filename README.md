@@ -5,7 +5,7 @@
 - チーズアカデミーの紹介LP
 
 ## ③アプリのデプロイURL
-デプロイしている場合はURLを記入（任意）
+https://git-yusuke-imai.github.io/kadai00_cheese/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - ID: なし
